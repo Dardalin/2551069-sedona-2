@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss-individual/2/user/2551069).
+* Студент: [Далинская Дарина](https://up.htmlacademy.ru/htmlcss-individual/2/user/2551069).
 * Наставник: [Анна Лисененкова] (https://htmlacademy.ru/profile/ankhena).
-
+* Сайт [проект Седон Далинская Дарина] (https://dardalin.github.io/2551069-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
