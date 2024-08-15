@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="page-header">
-      <a href="index.html" class="logo" >
-      <img src="#" alt="Логотип сайта" class="logo-image"></a>
+      <a href="index.html" class="logo">
+        <img src="#" alt="Логотип сайта" class="logo-image"
+      /></a>
       <nav class="navigation">
-        <ul class="navigation-list">   
+        <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="about.html">Главная</a>
           </li>
@@ -48,24 +49,85 @@
       </nav>
     </header>
     <main class="main-inner">
-        <div>
-            <h1>Гостиницы Седоны</h1>
-            <ul class="breadcrambs">
-                <li class="breadcrambs-item">
-                    <a class="breadcrambs-link" href="index.html">Главная</a>
-                </li>
-                <li class="breadcrambs-item">
-                    <a class="breadcrambs-link" href="">Каталог</a>
-                </li>
-            </ul>
-            <form class="main-filter" action="https://htmlacademy.ru/" method="get">
-                
-            </form>
-        </div>
+      <div>
+        <h1>Гостиницы Седоны</h1>
+        <ul class="breadcrambs">
+          <li class="breadcrambs-item">
+            <a class="breadcrambs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrambs-item">
+            <a class="breadcrambs-link">Каталог</a>
+          </li>
+        </ul>
+        <form
+          class="main-filter"
+          action="https://htmlacademy.ru/"
+          method="get"
+        ></form>
+      </div>
+      <section class="catalog-products">
+        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+        <form
+          class="catalo-filter"
+          accept="https://htmlacademy.ru/"
+          method="get"
+        >
+          <fieldset class="catalo-filter-group">
+            <legend class="catalo-filter-title" >Инфроструктура</legend>
+            <ul class="catalo-filter-list">
+             <li class="catalo-filter-item">
+              <label class="control">
+              <input type="checkbox" name="swimming-pool" checked>
+              Бассейн
+              </label>
+            </li>
+
+            <li class="catalo-filter-item">
+              <label class="control">
+              <input type="checkbox" name="parking-space" checked>
+              Парковка
+              </label>
+            </li>
+
+            <li class="catalo-filter-item">
+              <label class="control">
+              <input type="checkbox" name="wi-fi-web">
+              Wi-Fi
+              </label>
+            </li>
+          </fieldset >
+
+          <fieldset class="catalo-filter-group">
+            <legend class="catalo-filter-title" >Тип жилья</legend>
+            <ul class="catalo-filter-list">
+             <li class="catalo-filter-item">
+              <label class="control">
+              <input type="radio" name="swimming-pool" checked>
+              Гостиница
+              </label>
+            </li>
+
+            <li class="catalo-filter-item">
+              <label class="control">
+              <input type="radio" name="parking-space">
+              Отель
+              </label>
+            </li>
+
+            <li class="catalo-filter-item">
+              <label class="control">
+              <input type="radio" name="wi-fi-web">
+              Аппартаменты
+              </label>
+            </li>
+          </fieldset>
+
+
+
+          <button class="button-form" type="submit">Показать</button>
+        </form>
+      </section>
     </main>
-
-
-
 
     <section>
       <div class="text-wite">
@@ -84,43 +146,49 @@
           type="email"
           name="user-email"
           id="subcribe-form"
-          placeholder="Ваш e-mail">
+          placeholder="Ваш e-mail"
+        />
         <button class="button-all" type="submit">Подписаться</button>
       </form>
     </section>
 
-
     <footer class="page-footer">
-      
       <section class="footer-icons">
         <h2 class="visually-hidden">Список социальных сетей</h2>
-        
+
         <ul>
-          <li><a class="visually-hidden" href="https://vk.com/htmlacademy">vkontacte</a>
-          <img src="#" alt="логотив социальной сети вконтакте"></li>
+          <li>
+            <a class="visually-hidden" href="https://vk.com/htmlacademy"
+              >vkontacte</a
+            >
+            <img src="#" alt="логотив социальной сети вконтакте" />
+          </li>
 
-          <li><a class="visually-hidden" href="https://t.me/htmlacademy">telegram</a>
-          <img src="#" alt="логотив социальной сети телеграм"></li>
+          <li>
+            <a class="visually-hidden" href="https://t.me/htmlacademy"
+              >telegram</a >
+            <img src="#" alt="логотив социальной сети телеграм" />
+          </li>
 
-          <li><a class="visually-hidden" href=https://www.youtube.com/user/htmlacademyru>youtube</a>
-          <img src="#" alt="логотив ютуб"></li>
+          <li>
+            <a class="visually-hidden"
+            href=https://www.youtube.com/user/htmlacademy
+            >youtube</a >
+            <img src="#" alt="логотив ютуб">
+          </li>
         </ul>
       </section>
-      
-      
+
       <section>
         <h2 class="visually-hidden">Номер телефона</h2>
         <a class="contact-phone" href="tel:+78128121212">+78128121212</a>
       </section>
-      
+
       <section>
         <h2 class="visually-hidden">Логотип</h2>
-        <a class="visually-hidden" href="#">
-          
-        </a>
-        <img src="#" alt="логотип html academy">
+        <a class="visually-hidden" href="#"> </a>
+        <img src="#" alt="логотип html academy" />
       </section>
     </footer>
-    
-</body>
+  </body>
 </html>
