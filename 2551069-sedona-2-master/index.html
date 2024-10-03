@@ -10,25 +10,25 @@
   <body class="main-container">
     <div class="main-page">
       <header class="page-header">
-        <a href="index.html" class="logo" aria-current="page"></a>
-        <img src="images/logo.svg" width="138" height="64" alt="Логотип сайта" lang="en" class="logo-image">
         <div class="section-left">
+          <a href="index.html" class="logo" aria-current="page"></a>
+          <img src="images/logo.svg" width="138" height="64" alt="Логотип сайта" lang="en" class="logo-image">
           <nav class="navigation">
             <ul class="navigation-list">
-              <li>
+              <li class="navigation-item">
                 <a class="navigation-link" href="index.html">Главная</a>
               </li>
-              <li>
+              <li class="navigation-item">
                 <a class="navigation-link" href="city.html">O Седоне</a>
               </li>
-              <li>
+              <li class="navigation-item">
                 <a class="navigation-link" href="Catalog.html">Гостиницы</a>
               </li>
             </ul>
           </nav>
         </div>
         <div class="section-right">
-          <ul class="navigation-list">
+          <ul class="navigation-list navigation-user">
             <li class="navigation-item-search">
               <a class="navigation-link" href="#">
                 Поиск
@@ -47,6 +47,7 @@
               </a>
             </li>
           </ul>
+
         </div>
       </header>
 
@@ -64,47 +65,46 @@
             <h2 class="main-text">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
             <p class="main-text-paragraph">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
+          <section>
 
-
-          <section class="advantages">
             <h3 class="visually-hidden">Преимущества</h3>
             <ul class="advantages-list">
-              <li class="first">
+              <li class="advantages-item">
                 <h3>Настоящий городок</h3>
-                <p>
+                <p class="advantages-discription">
                   Седона — не аттракцион для туристов, там течёт своя жизнь
                 </p>
-                <img src="images/real-town.jpg" width="800" height="385" alt="фото города" class="advantages-city">
+                <img src="images/real-town.jpg" width="800" height="385" alt="фото города"
+                  class="advantages-item-img-city">
               </li>
-              <div class="advantages-center">
-                <li class="second">
-                  <h3>Небольшая площадь</h3>
-                  <p>
-                    Все достопримечательности находятся очень близко
-                  </p>
-                </li>
-                <li class="third">
-                  <h3>Красивая дорога</h3>
-                  <p>
-                    Ехать в Седону из Лас-Вегаса совсем не скучно!
-                  </p>
-                </li>
-                <li class="fourth">
-                  <h3>Мало туристов</h3>
-                  <p>
-                    Большинство едет в Гранд Каньон и толпится там
-                  </p>
-                </li>
-              </div>
-              <li class="fifth">
+              <li class="advantages-item-center">
+                <h3>Небольшая площадь</h3>
+                <p class="advantages-discription">
+                  Все достопримечательности находятся очень близко
+                </p>
+              </li>
+              <li class="advantages-item-center-road">
+                <h3>Красивая дорога</h3>
+                <p class="advantages-discription">
+                  Ехать в Седону из Лас-Вегаса совсем не скучно!
+                </p>
+              </li>
+              <li class="advantages-item-center">
+                <h3>Мало туристов</h3>
+                <p class="advantages-discription">
+                  Большинство едет в Гранд Каньон и толпится там
+                </p>
+              </li>
+              <li class="advantages-item">
                 <h3>Там есть мост дьявола</h3>
-                <p>
+                <p class="advantages-discription">
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
                 </p>
                 <img src="images/bridge.jpg" width="800" height="385" alt="фото моста дьявола"
-                  class="advantages-bridge">
+                  class="advantages-item-img-Bridge">
               </li>
             </ul>
+
           </section>
         </section>
 
@@ -116,24 +116,21 @@
           <nav>
             <ul class="comfort">
               <li class="advantages-item-common">
-                <img src="#" width="75" height="72" alt="logo-home">
                 <h3>Жилье</h3>
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-
+                <img src="#" width="75" height="72" alt="logo-home">
               </li>
               <li class="advantages-item-eat">
-                <img src="#" width="75" height="72" alt="logo-eat">
                 <h3>Еда</h3>
                 <p>
                   Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
                 </p>
-
+                <img src="#" width="75" height="72" alt="logo-eat">
               </li>
               <li class="advantages-item-common">
-                <img src="#" width="75" height="72" alt="logo-souvenir">
                 <h3>Сувениры</h3>
                 <p>Не только китайского, но и настоящего местного производства!</p>
-
+                <img src="#" width="75" height="72" alt="logo-souvenir">
               </li>
             </ul>
           </nav>
@@ -175,18 +172,18 @@
 
             <ul class="footer-icons-messendg">
               <li>
-                <a class="visually-hidden" href="https://vk.com/htmlacademy">логотип социальной сети вконтакте</a>
-                <img src="#" width="24" height="14" alt="*">
+                <a class="visually-hidden" href="https://vk.com/htmlacademy">vkontacte</a>
+                <img src="#" width="24" height="14" alt="логотип социальной сети вконтакте">
               </li>
 
               <li>
-                <a class="visually-hidden" href="https://t.me/htmlacademy">логотип социальной сети телеграм</a>
-                <img src="#" width="18" height="15" alt="*">
+                <a class="visually-hidden" href="https://t.me/htmlacademy">telegram</a>
+                <img src="#" width="18" height="15" alt="логотип социальной сети телеграм">
               </li>
 
               <li>
-                <a class="visually-hidden" href=https://www.youtube.com/user/htmlacademy>логотип ютуб</a>
-                <img src="#" width="22" height="17" alt="*">
+                <a class="visually-hidden" href=https://www.youtube.com/user/htmlacademy>youtube</a>
+                <img src="#" width="22" height="17" alt="логотип ютуб">
 
               </li>
             </ul>

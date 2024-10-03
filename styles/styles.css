@@ -9,31 +9,57 @@ font-display: swap;
 
 
  @font-face {
-  font-family: "ptsans-700";
+  font-family: "ptsans-700", sans-serif;
   font-style: bold;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
-  font-display: swap;
+  font-display: swap;}
+
+
+/*общие стили для страницы*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 body {
   font-family: "ptsans-400", sans-serif;
-  size: 22px;
+  font-size: 22px;
   line-height: 26px;
-  color: black;
-  background-color: white;
-
+  color: #333333;
+  text-align: center;
+  background-color: #F2F2F2;
+  margin: 0;
+  height: 100%;
+  width: 100%;
 }
 
-.page-header {
+h2 {
   font-family: "ptsans-700", sans-serif;
-  font-size: 20px;
-  line-height: 24px;
-  color: black;
-  background-color: white;
-
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
 }
 
+h3 {
+  font-family: "ptsans-400", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+.main-page{
+  width: 1200px;
+  margin: auto;
+  background-color: #ffffff;
+}
 
 .navigation-link {
   font-family: "ptsans-700", sans-serif;
@@ -46,40 +72,8 @@ body {
   text-transform: none;
 }
 
-
-
-
-
-.main-background {
-  background-image: url("../images/background.jpg");
-  color: black;
-  background-color: rgba(178, 202, 213, 0.856);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-
-
-}
-
-.main-index {
-  text-align: center;
-}
-
-.main-text {
-  font-family: "ptsans-700", sans-serif;
-  font-size: 30px;
-  line-height: 36px;
-  color: black;
-  background-color: white;
-  text-transform: uppercase
-}
-
-.main-text-paragraph {
-  font-family: "ptsans-400", sans-serif;
-  font-size: 22px;
-  line-height: 26px;
-  color: black;
-  background-color: white;
-  text-transform: none;
+ul{
+  list-style: none;
 }
 
 .button-all {
@@ -88,168 +82,78 @@ body {
   text-decoration: none;
   font-family: "ptsans-700";
   font-size: 16px;
-  line-height: 36px;
+  line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   align-content: center;
+  border-radius: 4px;
+  padding: 8px 34px;
 }
-
-.advantages {
-  color: white;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
+/*Стилизаация шапки*/
+header{
+display: flex;
+justify-content: space-between;
+padding: 0 70px;
+text-transform: uppercase;
+font-family: "ptsans-700", sans-serif;
+font-size: 20px;
+line-height: 24px;
+align-items: center;
 }
-
-.advantages-item {
- background: rgba(130, 179, 211, 1);
-
-}
-
-.advantages-discription {
-  font-size: 18px;
-  line-height: 21px;
-  text-transform: none;
-}
-
-.advantages-item-center-road {
-background: rgba(131, 179, 211, 0.2);
-color: black;
-}
-
-.advantages-item-center {
-  background: rgba(131, 179, 211, 0.12);
-  color: black;
-}
-
-.form-subscribe {
-  background-image: url("../images/Фильтр.jpg");
-  background-color:rgba(131, 179, 211, 0.2);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  color: white;
-
-}
-
-.button-all-subscribe{
-  background: rgba(130, 179, 211, 1);
-  color: white;
-}
-
-.advantages-item-common {
-  background: rgba(131, 179, 211, 0.12);
-  font-family: "ptsans-400", sans-serif;
-}
-
-
-
-
-
-
-
-
-
-.main-inner-background {
-  background-image: url("../images/Subscribe.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  color: white;
-
-}
-
-.title-catalog {
-font-size: 60px;
-line-height: 78px;
-}
-
-
-
-.product-card {
-  color: black;
-  font-size: 24px;
-  line-height: 28px;
-  font-family: "ptsans-700", sans-serif;
+.navigation-list {
   list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.section-left {
+margin: 0 auto;
+
+}
+.section-right {
+margin: 0 auto;
 }
 
-.product-card-link {
-text-decoration: none;
-}
+/*стилизация блока преимуществ*/
+.advantages-list{
+background-color: #83B3D31F;
+padding: 0;
+margin: 0;
+display: flex;
+flex-wrap: wrap;
 
-.button-form-like {
-  font-size: 16px;
-  line-height: 20px;
-  background: rgba(130, 179, 211, 1);
-  font-family: "ptsans-700", sans-serif;
-  text-transform: uppercase;
-  border-bottom:#82B3D3;
-  border-left-color: #82B3D3;
-  border-right-color: #82B3D3;
-  border-top-color:#82B3D3;
 }
-
-.title-price,  .product-price {
+.advantages-list p {
   font-family: "ptsans-400", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  width: 230px;
+}
+.advantages-list h3{
+  width: 175px;
 }
 
-.title-product-card {
-  size: 24px;
-  line-height: 28px;
-  color: black;
-  text-align: left;
-  text-decoration: none;
-}
-
-
-.subscribe, .info {
-  color: black;
-}
-
-.button-catalog {
+.first{
+  width: 1200px;
+  display: flex;
   background-color: #82B3D3;
-  border-bottom:#82B3D3;
-  border-left-color: #82B3D3;
-  border-right-color: #82B3D3;
-  border-top-color:#82B3D3;
 }
-.reiting-product {
- font-size: 16px;
-  line-height: 20px;
-  font-family: "ptsans-400", sans-serif;
-  background: rgba(242, 242, 242, 1);
+.advantages-center {
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.footer-icons-messendg {
-  list-style: none;
-}
-
-
-.catalog-products{
-  font-family: "ptsans-400", sans-serif;
-  font-size: 18px;
-  line-height: 23px;
-}
-
-.catalog-filter-title {
-  font-family: "ptsans-700", sans-serif;
-  font-size: 24px;
-  line-height: 24px;
-  }
-
-  .form {
+.fifth{
+  width: 1200px;
+  display: flex;
   background-color: #82B3D3;
-  border-bottom:#82B3D3;
-  border-left-color: #82B3D3;
-  border-right-color: #82B3D3;
-  border-top-color:#82B3D3;
-  }
-
-
-  .contact-phone {
-    font-size: 40px;
-    line-height: 40px;
-    color: black;
-    text-decoration: none;
-  }
+  flex-direction: row-reverse;
+}
+/*Стилизация подвала*/
+.contact-phone {
+ font-size: 40px;
+ line-height: 40px;
+ color: black;
+ text-decoration: none;
+}
